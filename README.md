@@ -1,5 +1,6 @@
 # Revature Batch May 26th, 2020
 A collection of the demos/notes for the Revature Online Certification Program on 5/26/20
+### Click [here](https://docs.google.com/presentation/d/1W5W4d1Ey0VXYf0ss6Zx5Ryh0_xMLAb3elNAKMu7b_JQ/edit?usp=sharing) for our lecture slides.
 
 ## Useful Links
 * [Git Cheat Sheet](https://www.git-tower.com/blog/git-cheat-sheet)
