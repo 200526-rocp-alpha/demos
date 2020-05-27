@@ -69,6 +69,7 @@ public class EarthDriver {
 		parrot.fly();
 		
 		// Animal blob = new Animal(1, "brown", 0.5);
+		// You can't instantiate an Abstract class!!!!!
 		
 	}
 
