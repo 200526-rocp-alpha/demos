@@ -45,6 +45,31 @@ public class EarthDriver {
 		person3.speak();
 		// This is a test to show that I can push to GitHub
 		
+//		Animal thing1 = new Animal(3, "grey", 190.43);
+//		thing1.eat();
+		
+		Bird bird1 = new Bird(2, "red", 30);
+		bird1.eat();
+		
+		Bird pidgeon = new Bird(1, "greyish-blue", 2.2);
+		pidgeon.sleep();
+		
+		Bird xyz = new Bird(3, "blue", 5);
+		Bird eagle = new Bird(5, "white", 7.2);
+		// Bird.fly();
+		
+		//Bird.fly();//.....this makes no sense. the methods are NOT static
+		// a NON-STATIC must behave on an instantiated object.\\
+		
+		pidgeon.fly(); // only child classes can inherit methods and properties of the parent class.
+		
+		FlyingMammal bat = new FlyingMammal(1, "dark grey", 0.5);
+		Bird parrot = new Bird(45, "green", 30.4);
+		bat.fly();
+		parrot.fly();
+		
+		// Animal blob = new Animal(1, "brown", 0.5);
+		
 	}
 
 }
