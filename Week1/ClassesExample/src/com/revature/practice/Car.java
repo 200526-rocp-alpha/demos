@@ -2,7 +2,7 @@ package com.revature.practice;
 
 public class Car extends Vehicle {
 
-	// since Car extends Vehicle, it has 
+	// since Car extends Vehicle, it has:
 	// int wheels
 	// String motor; ... we don't see this because it's abstracted away.
 	
@@ -13,7 +13,7 @@ public class Car extends Vehicle {
 	}
 	
 	// now we are overloading the method
-	// another example of Polymorphism is overloading
+	// another example of Polymorphism is overloading (changing the amount of arguments_
 	public void drive(int miles) {
 		System.out.println("the car just drove " + miles + "miles.");
 	}
