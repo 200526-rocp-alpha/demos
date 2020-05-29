@@ -13,9 +13,9 @@ public class Driver {
 		 */
 		
 		HashSet<Integer> nums = new HashSet<Integer>();
-		nums.add(2);
+		nums.add(2); 
 		nums.add(3);
-		nums.add(2);
+		nums.add(2); 
 		
 		for (int num : nums) {
 			System.out.println(num);
@@ -32,12 +32,14 @@ public class Driver {
 		set.add(a3);
 		set.add(a4);
 		
-		for (Animal animal : set) {
+		for (Animal animal : set) { // for each individual element, print it.
 			System.out.println(animal);
 		}
 		
 		System.out.println("Content Comparison: " + a1.equals(a4)); // .equals() = a method that compares content
+		// .equals() will only return true IF I override this method
 		System.out.println("Memory Comparison: " + (a1 == a4)); // and the == operator is an operator that compares 
+		System.out.println(a1.hashCode() + " " + a4.hashCode());
 		
 
 	}
