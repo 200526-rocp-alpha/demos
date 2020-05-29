@@ -1,5 +1,13 @@
 # Banking API
-The Banking API will manage the bank accounts of its users. It will be managed by the Bank's employees and admins. Employees and Admins count as Premium Users with additional abilities. Employees can view all customer information, but not modify in any way. Admins can both view all user information, as well as directly modify it. Standard users should be able to register and login to see their account information. They can have either Checking or Savings accounts. Savings accounts will have interest rates, that can be determined as you see fit. All users must be able to update their personal information, such as username, password, first and last names, as well as email. Accounts owned by users must support withdrawal, deposit, and transfer. Transfer of funds should be allowed between accounts owned by the same user, as well as between accounts owned by different users. Standard Users should be able to upgrade to Premium (the cost of such an upgrade may be freely determined). With this premium status, Users should now also be able to open new joint accounts (accounts with multiple owners), as well as be able to add users to pre-existing accounts.
+The Banking API will manage the bank accounts of its users. It will be managed by the Bank's employees and admins. Employees and Admins count as Premium Users with additional abilities. 
+* Employees can view all customer information, but not modify in any way. 
+* Admins can both view all user information, as well as directly modify it. 
+* Standard users should be able to register and login to see their account information.They can have either Checking or Savings accounts. 
+* Savings accounts will have interest rates, that can be determined as you see fit. 
+* All users must be able to update their personal information, such as username, password, first and last names, as well as email.
+* Accounts owned by users must support withdrawal, deposit, and transfer. 
+* Transfer of funds should be allowed between accounts owned by the same user, as well as between accounts owned by different users.
+* Standard Users should be able to upgrade to Premium (the cost of such an upgrade may be freely determined). With this premium status, Users should now also be able to open new joint accounts (accounts with multiple owners), as well as be able to add users to pre-existing accounts.
 
 ## Models
 The below models are an outline that supports the required features. They can be expanded or modified as needed.
