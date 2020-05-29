@@ -10,6 +10,28 @@ public class Animal {
 		this.name = name;
 		this.age = age;
 	}
+	
+	// this is another method
+	public void shoutName() {	
+		String x = this.name;
+		System.out.println("MY NAME IS " + x.toUpperCase());
+	}
+	
+	// this is a method
+	public int futureAge() {
+		return this.age + 20;
+	}
+	
+	public void choppedName() {
+		// this method will use the String.substring() method to return a new name
+		String x = this.name;
+		System.out.println(x.substring(2));
+	}
+	
+	public String anotherNameMethod() {
+		String x = this.name;
+		return x.substring(2,4);
+	}
 
 	@Override
 	public int hashCode() {
@@ -38,5 +60,8 @@ public class Animal {
 			return false;
 		return true;
 	}
+
+
 	
+
 }

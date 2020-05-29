@@ -37,11 +37,62 @@ public class Driver {
 		}
 		
 		System.out.println("Content Comparison: " + a1.equals(a4)); // .equals() = a method that compares content
-		// .equals() will only return true IF I override this method
-		System.out.println("Memory Comparison: " + (a1 == a4)); // and the == operator is an operator that compares 
-		System.out.println(a1.hashCode() + " " + a4.hashCode());
+		// .equals() will only return true IF I override this method IN THE ANIMAL CLASS
+		System.out.println("Memory Comparison: " + (a1 == a4)); // and the == operator is an operator that compares address
+
+		
+		//		System.out.println(a1.hashCode() + " " + a4.hashCode());
+//		
+//		Animal cat = new Animal("Cat", 10); // instantiate Cat object
+//		int futureAge =  cat.futureAge(); // store it's future age in a variable by calling the futureAge method 
+//		
+//		System.out.println("The cat's age in 20 years is: " + futureAge);
+//		
+//		
+//		
+//		Animal parrot = new Animal("Parrot", 32);
+//		parrot.shoutName();
+//		
+//		Animal d = new Animal("Dolphin", 10);
+//		d.shoutName();
+//		d.choppedName();
+//		
+//		String newName = d.anotherNameMethod(); // this doesn't print anything! 
+//		System.out.println(newName);
+//		
+//		// RegEx  = regular expressions...but not today.
+//		
+//		
+//		
+		int x = 2; // both x and y have different addresses...
+		int y = 2; 
+		
+		System.out.println(x==y);
+		
+		
+		Integer number = new Integer(2);
+		
 		
 
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
