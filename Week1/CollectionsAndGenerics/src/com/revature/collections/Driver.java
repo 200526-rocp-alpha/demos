@@ -34,7 +34,7 @@ public class Driver {
 		myIntegers.add(103);
 		
 		for (int i=0; i<myIntegers.size(); i++) {
-			System.out.println("the int in my ArrayList is:" + myIntegers.get(i));
+			System.out.println("the int in my ArrayList is: " + myIntegers.get(i));
 		}
  
 	}
