@@ -61,20 +61,25 @@ public class Member {
 
 		
 		do {
-			System.out.println("Enter an exercise class to enroll in: ");
+			System.out.println("Enter an exercise class to enroll in (Q to quit): ");
 			String classToEnrollIn = scan.nextLine();
 			
-			
-			this.enrolledClasses += "\n " + classToEnrollIn; // but what about when a User types Q
-			
+			if(!classToEnrollIn.equals("Q")) {
+				this.enrolledClasses += "\n " + classToEnrollIn; // but what about when a User types Q?
+				this.monthlyDues += costOfClasses;
+			} else {
+				asking = false; // this will break our loop; 1 or 0 false
+			}
+			// some clean up code here
 		} while (asking);
 		
 	}
 	
-	
 	// 3. method to pay monthlyDues
 	
+	
 	// 4. method to view account Info
+	
 
 	
 
