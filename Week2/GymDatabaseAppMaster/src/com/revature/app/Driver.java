@@ -8,6 +8,7 @@ public class Driver {
 		Member member1 = new Member();
 		
 		System.out.println(member1);
+		member1.enroll();
 		// 2. Ask the user how many Members to enroll
 		
 		// 3. Create n number of new Members
