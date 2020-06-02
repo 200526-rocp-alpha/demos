@@ -1,4 +1,5 @@
-## Go [here](https://docs.google.com/document/d/1lJ0uA1lQpHq9C4dUnjdfuViNASwv0Si_S6sxvO_DHx4/edit#heading=h.nhr8ma6gr210) for questions to study for Monday.
+## Go [here](https://docs.google.com/document/d/1YvfXk57GRN7RDc-nYtDnfQ4xPMp16-Cbu5HZSaVZSBc/edit?usp=sharing) for topics to study for Monday June 8th.
+Topic: SQL, RDBMS, JDBC.
 
 # Revature Batch May 26th, 2020
 A collection of the demos/notes for the Revature Online Certification Program on 5/26/20
