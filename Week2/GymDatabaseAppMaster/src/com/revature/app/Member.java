@@ -70,15 +70,33 @@ public class Member {
 			} else {
 				asking = false; // this will break our loop; 1 or 0 false
 			}
-			// some clean up code here
+			// some clean up code here that will still execute even if asking == false;
 		} while (asking);
 		
 	}
 	
-	// 3. method to pay monthlyDues
+	// 3. Method to view balance
+	public void viewMonthlyDues() {
+		System.out.println("Your balance left on Monthly Dues is " + this.monthlyDues + ".");
+	}
 	
+	// 4. Method to pay monthlyDues
+	public void payMonthlyDues(double payment) {
+		this.monthlyDues -= payment;
+		System.out.println("Thank you for your payment of $" + payment);
+		// then incorporate the view Monthly Dues:
+		viewMonthlyDues();
+		
+	}
 	
-	// 4. method to view account Info
+	// 5. Show Info 
+	public void showInfo() {
+		System.out.println("\nName: " + this.firstName + " " + this.lastName +  
+				"\nMember ID: " + this.memberId + 
+				"\nClasses enrolled in: " + this.enrolledClasses + 
+				"\nMonthly Dues: " + this.monthlyDues);
+		
+	}
 	
 
 	
