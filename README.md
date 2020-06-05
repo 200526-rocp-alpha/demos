@@ -5,6 +5,8 @@ Topic: SQL, RDBMS, JDBC.
 A collection of the demos/notes for the Revature Online Certification Program on 5/26/20
 ### Click [here](https://docs.google.com/presentation/d/1W5W4d1Ey0VXYf0ss6Zx5Ryh0_xMLAb3elNAKMu7b_JQ/edit?usp=sharing) for our lecture slides.
 
+### Click [here](https://docs.google.com/document/d/1lJ0uA1lQpHq9C4dUnjdfuViNASwv0Si_S6sxvO_DHx4/edit?usp=sharing) for link to Week 1 Notes doc.
+
 ## Useful Links
 * [Git Cheat Sheet](https://www.git-tower.com/blog/git-cheat-sheet)
 * [Git Basics](https://youtu.be/0fKg7e37bQE)
