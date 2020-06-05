@@ -19,10 +19,12 @@ import com.revature.utils.ConnectionFactory;
 
 // The JDBC is the API that gives us Classes and Objects to interact with our persistance layer.
 
+// we use the DAO implementation to perform CRUD operations against the DB and assign
+// properties to the Object instantiated from that class
 
 
 // we are creating a concrete DAO to demo functionality and the 5 basic steps of JDBC connection
-public class AccountDao {
+public class AccountDao implements DAO<Account, Integer> {
 
 	public static void main(String[] args) {
 
@@ -33,6 +35,10 @@ public class AccountDao {
 			e.printStackTrace();
 		}
 		// 1. Establish the Connection Object\
+		
+		
+		
+		
 		
 		int s = 0;
 		List<Account> accounts = new ArrayList<Account>();
@@ -73,6 +79,31 @@ public class AccountDao {
 		System.out.println(accounts);
 	}
 	
+	@Override
+	public List<Account> findAll() {
+		List<Account> accounts = new ArrayList<Account>();
+		try(Connection conn = ConnectionFactory.getConnection()){
+			String sql = "SELECT * FROM ACCOUNT";
+			Statement statement = conn.createStatement();
+			ResultSet rs = statement.executeQuery(sql);			
+			while(rs.next()) {
+				Account temp = new Account();
+				temp.setAccId(rs.getInt(1));
+				temp.setUsrId(rs.getInt(2));
+				temp.setAccType(rs.getInt(3));
+				temp.setNickname(rs.getString(4));
+				temp.setBalance(rs.getDouble(5));
+				temp.setInterest(rs.getDouble(6));
+				temp.setActive(rs.getInt(7));
+				accounts.add(temp);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return accounts;
+	}
+	
+	
 	public Account create(Account acc) {
 		try(Connection conn = ConnectionFactory.getConnection()){
 			String sql = "INSERT INTO account (account_no, first_name, last_name, balance) VALUES(?, ?, ?, ?)";
@@ -98,6 +129,18 @@ public class AccountDao {
 	private int getUserId() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public Account findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Account update(Account obj) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
