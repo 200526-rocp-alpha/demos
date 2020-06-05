@@ -44,7 +44,16 @@ public class Account {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
+
 	
+
+	// Generate a toString() method;
+
+	@Override
+	public String toString() {
+		return "Account [accountNo=" + accountNo + ", firstName=" + firstName + ", lastName=" + lastName + ", balance="
+				+ balance + "]";
+	}	
 
 	
 }
