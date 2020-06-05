@@ -34,50 +34,9 @@ public class AccountDao implements DAO<Account, Integer> {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		// 1. Establish the Connection Object\
 		
-		
-		
-		
-		
-		int s = 0;
-		List<Account> accounts = new ArrayList<Account>();
-		try {
-			Connection conn = ConnectionFactory.getConnection();
-			if( conn != null) {
-				System.out.println("Congrats you're connected!");
-			} else {
-				System.out.println("Connection failed");
-			}
-			
-		// 2. Create a Statement Object to send to the database (SQL)
-			Statement  statement = conn.createStatement();
-			
-
-		// 3. Execute the Statement Object (this object contains the data from the database)	
-			ResultSet resultSet = statement.executeQuery("SELECT * FROM account");
-			if (resultSet != null) {
-				System.out.println("RS not null");
-			}
-			
-		// 4. Process the Result by iterating through the ResultSet.	
-			while(resultSet.next()) {
-				Account temp = new Account();
-				s += resultSet.getInt("account_no");
-//				temp.setFirstName(resultSet.getString(2));
-//				temp.setLastName(resultSet.getString(3));
-//				temp.setBalance(resultSet.getInt(4));
-//				accounts.add(temp);
-			}
-			
-			
-		} catch (SQLException e) {
-			System.out.println("Your connection failed, sorry!");
-			e.printStackTrace();
-		}
-		System.out.println(s);
-		System.out.println(accounts);
 	}
+		// 1. Establish the Connection Object\
 	
 	@Override
 	public List<Account> findAll() {
@@ -130,13 +89,11 @@ public class AccountDao implements DAO<Account, Integer> {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
 	public Account findById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
 	public Account update(Account obj) {
 		// TODO Auto-generated method stub
