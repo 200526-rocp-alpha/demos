@@ -14,11 +14,21 @@
  	<servlet-name>HelloWorldServlet</servlet-name>
  	<servlet-class>com.revature.servlets.HelloWorldServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   	<servlet-name>HelloWorldServlet</servlet-name>
   	<url-pattern>/hello</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdditionServlet</servlet-name>
+  	<servlet-class>com.revature.servlets.AdditionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AdditionServlet</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
 
 </web-app>
 
