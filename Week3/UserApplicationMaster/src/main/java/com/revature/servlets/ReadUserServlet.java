@@ -48,15 +48,39 @@ public class ReadUserServlet extends HttpServlet {
 			// we still use Print Writer to build a dynamic HTML 
 			PrintWriter out = res.getWriter();
 			
-			out.println("<table>");
+			out.println("<table>");  // First Name       Last Name         Email
 			out.println("<tr>");
 			out.println("<th>");
 			out.println("First Name"); // we will return a table in HTML of FN, LN, EMAIL.
-			
+			out.println("</th>");
+			out.println("<th>");
+			out.println("Last Name");
+			out.println("</th>");
+			out.println("<th>");
+			out.println("Email");
+			out.println("</th>");
+			out.println("</tr>");
 			
 			while(resultSet.next()) {
 				// do something here....realted to getString() <td>
+				out.println("<tr>");
+				
+				out.println("<td>");
+				out.println(resultSet.getString("firstname"));
+				out.println("</td>");
+				
+				out.println("<td>");
+				out.println(resultSet.getString("lastname"));
+				out.println("</td>");
+				
+				out.println("<td>");
+				out.println(resultSet.getString("email"));
+				out.println("</td>");
+				
+				out.println("</tr>");
 			}
+			
+			out.println("</table>");
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
