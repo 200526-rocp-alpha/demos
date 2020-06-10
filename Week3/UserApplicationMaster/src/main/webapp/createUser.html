@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+</head>
+	<body>
+		<h1>Sign Up!</h1>
+		<form method="post" action="addUserServlet">  <!-- web.xml <url-pattern> -->
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="firstName"/></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lastName"/></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="email"/></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password"/></td>
+				</tr>
+				<tr>
+					<td />
+					<td><input type="submit" value="Create!"/></td>
+				</tr>
+
+			</table>
+		</form>
+	</body>
+</html>
