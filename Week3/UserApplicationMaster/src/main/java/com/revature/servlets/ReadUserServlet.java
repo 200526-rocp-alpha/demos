@@ -8,10 +8,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 
 public class ReadUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -43,10 +43,11 @@ public class ReadUserServlet extends HttpServlet {
 		
 		try {
 			Statement statement = conn.createStatement();
-			ResultSet resultSet = statement.executeQuery("SELECT * FROM msg_usr");
+			ResultSet resultSet = statement.executeQuery("SELECT * FROM msg_user");
 			
 			// we still use Print Writer to build a dynamic HTML 
 			PrintWriter out = res.getWriter();
+			res.setContentType("text/html");
 			
 			out.println("<table>");  // First Name       Last Name         Email
 			out.println("<tr>");

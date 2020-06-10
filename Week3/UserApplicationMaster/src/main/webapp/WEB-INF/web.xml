@@ -27,6 +27,14 @@
   	<servlet-name>UpdateUserServlet</servlet-name>
   	<url-pattern>/updateUserServlet</url-pattern>
   </servlet-mapping>
-  
-  
+
+	<servlet>
+		<servlet-name>ReadUserServlet</servlet-name>
+		<servlet-class>com.revature.servlets.ReadUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReadUserServlet</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+
 </web-app>
