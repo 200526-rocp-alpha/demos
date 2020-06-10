@@ -19,8 +19,14 @@
   	<url-pattern>/createUserServlet</url-pattern>
   </servlet-mapping>
   
-  
-  
+  <servlet>
+  	<servlet-name>UpdateUserServlet</servlet-name>
+  	<servlet-class>com.revature.servlets.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateUserServlet</servlet-name>
+  	<url-pattern>/updateUserServlet</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>
