@@ -14,10 +14,13 @@
   	<servlet-name>CreateUserServlet</servlet-name>
   	<servlet-class>com.revature.servlets.CreateUserServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   	<servlet-name>CreateUserServlet</servlet-name>
   	<url-pattern>/createUserServlet</url-pattern>
   </servlet-mapping>
+  
+  
+  
+  
   
 </web-app>
