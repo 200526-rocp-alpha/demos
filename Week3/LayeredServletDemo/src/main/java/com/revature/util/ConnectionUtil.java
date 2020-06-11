@@ -43,9 +43,9 @@ public class ConnectionUtil {
 			
 			try {
 				conn = DriverManager.getConnection(
-						"jdbc:oracle:thin:@training.cfnsfrwudzke.us-west-1.rds.amazonaws.com:1521:ORCL",
-						"beaver",
-						"chew"); // HARD CODED PASSWORD
+						"jdbc:oracle:thin:@database-2.c0rzi76acgyn.us-east-1.rds.amazonaws.com:1521:ORCL",
+						"admin",
+						"12345678"); // HARD CODED PASSWORD
 				// If you push this to GitHub, everyone can see your password!
 				// VERY UNSAFE!
 				// Recommendation: Use environment variables instead
