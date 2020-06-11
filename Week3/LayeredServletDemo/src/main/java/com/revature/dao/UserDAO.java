@@ -10,7 +10,7 @@ import java.util.List;
 
 import com.revature.models.Role;
 import com.revature.models.User;
-import com.revature.util.ConnectionUtil;
+import com.revature.util.ConnectionFactory;
 
 /**
  * This is a class that follows the DAO Design Pattern.
@@ -30,7 +30,7 @@ public class UserDAO implements IUserDAO {
 		
 		// Step 1: Get a Connection using ConnectionUtil
 		// The Connection interface represents the physical connection to the database
-		try (Connection conn = ConnectionUtil.getConnection()) {
+		try (Connection conn = ConnectionFactory.getConnection()) {
 			
 			// Step 2: Define our SQL Statements
 			String columns = "username, password, first_name, last_name, email, role_id";
@@ -77,7 +77,7 @@ public class UserDAO implements IUserDAO {
 		// It allows us to instantiate some variable for use only inside the try block
 		// And then at the end, it will automatically invoke the close() method on the resource
 		// The close() method prevents memory leaks
-		try (Connection conn = ConnectionUtil.getConnection()) {
+		try (Connection conn = ConnectionFactory.getConnection()) {
 			String sql = "SELECT * FROM USERS INNER JOIN ROLES ON USERS.role_id = ROLES.id";
 			
 			Statement stmt = conn.createStatement();
@@ -129,7 +129,7 @@ public class UserDAO implements IUserDAO {
 
 	@Override
 	public User findByUsername(String username) {
-		try (Connection conn = ConnectionUtil.getConnection()) {
+		try (Connection conn = ConnectionFactory.getConnection()) {
 			String sql = "SELECT * FROM USERS INNER JOIN ROLES ON USERS.role_id = ROLES.id WHERE username = ?";
 			PreparedStatement stmt = conn.prepareStatement(sql);
 			stmt.setString(1, username);

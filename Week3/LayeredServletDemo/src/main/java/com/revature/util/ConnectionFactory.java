@@ -16,13 +16,13 @@ import java.sql.SQLException;
  * There are also a few Exceptions that could occur, so we provide some exception handling for
  * those cases.
  */
-public class ConnectionUtil {
+public class ConnectionFactory {
 
 	private static Connection conn = null;
 	
 	// Private constructor PREVENTS us from ever instantiating this class
 	// This is fine, since our helper methods are all static, and do not need the instance
-	private ConnectionUtil() {
+	private ConnectionFactory() {
 		super();
 	}
 	
