@@ -24,6 +24,9 @@ public class SourceServlet extends HttpServlet {
 			System.out.println(cookies[i].getValue());
 		}
 		
+		response.addCookie(new Cookie("SecondMySecurityToken", "zzz888373ABCD123"));
+		
+		
 		String username = request.getParameter("userName"); // we're getting this from our html
 		
 		HttpSession session = request.getSession();
