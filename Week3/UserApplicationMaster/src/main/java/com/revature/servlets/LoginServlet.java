@@ -73,10 +73,6 @@ public class LoginServlet extends HttpServlet {
 				rd.include(req, res);
 			}
 			
-			
-			
-			
-			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
