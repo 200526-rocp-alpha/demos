@@ -9,43 +9,57 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  <servlet>
-  	<servlet-name>CreateUserServlet</servlet-name>
-  	<servlet-class>com.revature.servlets.CreateUserServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>CreateUserServlet</servlet-name>
-  	<url-pattern>/createUserServlet</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>UpdateUserServlet</servlet-name>
-  	<servlet-class>com.revature.servlets.UpdateUserServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>UpdateUserServlet</servlet-name>
-  	<url-pattern>/updateUserServlet</url-pattern>
-  </servlet-mapping>
+
 
 	<servlet>
-		<servlet-name>ReadUserServlet</servlet-name>
-		<servlet-class>com.revature.servlets.ReadUserServlet</servlet-class>
+		<servlet-name>SourceServlet</servlet-name>
+		<servlet-class>com.revature.servlets.SourceServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ReadUserServlet</servlet-name>
-		<url-pattern>/read</url-pattern>
+		<servlet-name>SourceServlet</servlet-name>
+		<url-pattern>/sourceServlet</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>TargetServlet</servlet-name>
+		<servlet-class>com.revature.servlets.TargetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TargetServlet</servlet-name>
+		<url-pattern>/targetServlet</url-pattern>
+	</servlet-mapping>
+  
   <servlet>
-  	<servlet-name>DeleteUserServlet</servlet-name>
-  	<servlet-class>com.revature.servlets.DeleteUserServlet</servlet-class>
+    <servlet-name>CreateUserServlet</servlet-name>
+    <servlet-class>com.revature.servlets.CreateUserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>DeleteUserServlet</servlet-name>
-  	<url-pattern>/deleteUserServlet</url-pattern>
+    <servlet-name>CreateUserServlet</servlet-name>
+    <url-pattern>/createUserServlet</url-pattern>
   </servlet-mapping>
-	
-	
-
+  <servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.revature.servlets.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/updateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReadUserServlet</servlet-name>
+    <servlet-class>com.revature.servlets.ReadUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadUserServlet</servlet-name>
+    <url-pattern>/read</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.revature.servlets.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/deleteUserServlet</url-pattern>
+  </servlet-mapping>
+ 
 </web-app>
