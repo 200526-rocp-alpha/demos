@@ -61,7 +61,7 @@ public class LoginServlet extends HttpServlet {
 			if (resultSet.next()) {
 				
 				// we want to set an attribute
-				req.setAttribute("message", "Access granted! Welcome to the HomeServlet.");
+				req.setAttribute("message", "Access granted! Welcome to the HomeServlet " + email);
 				
 				rd.forward(req, res); // in this case we haven't created the home servlet yet
 				// we're forwarding the req & resp object to the HomeServlet
